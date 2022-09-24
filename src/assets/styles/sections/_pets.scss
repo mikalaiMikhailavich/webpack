@@ -1,0 +1,58 @@
+.pets {
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  &__buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1322px;
+    width: 114%;
+    top: 50%;
+    transform: translate(-6%, -50%);
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__card {
+    width: calc(100% / 3);
+    border: 1px solid $color-orange;
+    border-radius: 5px;
+  }
+
+  &__image {
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    padding: 0 14px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 48px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__choose {
+    display: block;
+    margin: 80px auto 100px;
+  }
+}

@@ -1,0 +1,33 @@
+.backstage {
+  background: right top 12px no-repeat url(../images/background_flower.png);
+  padding: 140px 0 180px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    max-width: 609px;
+    width: 100%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__info {
+    max-width: 465px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include font-setting(48px, 400, 58px);
+  }
+
+  &__subtitle {
+    margin: 54px 0 34px 0;
+    @include font-setting(24px, 400, 29px);
+  }
+
+  &__text {
+    @include font-setting(16px, 400, 22.4px);
+  }
+}

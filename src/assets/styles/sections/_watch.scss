@@ -1,0 +1,24 @@
+.watch {
+  background: center / cover no-repeat url(../images/background-main.png);
+  position: relative;
+
+  &__inner {
+    padding: 163px 0 158px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  &__button {
+    margin-top: 5px;
+  }
+
+  &__title_colored {
+    color: $color-yellow;
+  }
+}

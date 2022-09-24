@@ -1,0 +1,85 @@
+.feed {
+  padding: 69px 0 100px 0;
+
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  &__container {
+    // padding: 41px auto 59px 99px;
+    background: rgba(253, 253, 255, 0.52);
+    border-radius: 20px;
+    padding: 41px 0 59px 0;
+  }
+
+  &__title {
+    @include font-setting(48px, 400, 58px);
+    text-align: center;
+    color: $color-orange;
+  }
+
+  &__block {
+    margin: 0 auto;
+    display: flex;
+    max-width: 764px;
+    gap: 30px;
+  }
+
+  &__card {
+    width: 168px;
+  }
+
+  &__image {
+    height: 168px;
+    position: relative;
+    border: 1px solid $color-orange;
+    border-radius: 4px;
+
+    img {
+      position: relative;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__info {
+    @include font-setting(16px, 400, 22px);
+    margin: 30px 0 30px 0;
+  }
+
+  &__arrow {
+    position: relative;
+    width: 69px;
+    img {
+      position: relative;
+      top: 24%;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 80px auto 100px;
+  }
+}

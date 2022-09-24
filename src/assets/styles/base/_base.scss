@@ -1,0 +1,49 @@
+*::before,
+*:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  //   border: 1px solid red;
+}
+
+body {
+  margin: 0 auto;
+  color: $color-text;
+  font-family: $font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding-top: 3px;
+  @include font-setting(19px, 400, 23px);
+}
+
+h2 {
+  @include font-setting(106.5px, 700, 79.87px);
+  letter-spacing: -4px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h5 {
+  @include font-setting(16px, 400, 22.4px);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
